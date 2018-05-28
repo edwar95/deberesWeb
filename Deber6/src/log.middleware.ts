@@ -18,8 +18,10 @@ export class LogMiddleware implements NestMiddleware {
                 headers: request.headers,
             };
            if(nivelDeLog=="archivo"){
-               var fileWriter= require('fileWriter');
-               fileWriter.writeFileAsync('logs.txt', respuesta, function (err) {
+
+               var fs = require('fs');
+
+               fs.writeFile('log.txt', JSON.stringify(respuesta ), function (err) {
                    if (err) throw err;
                    console.log('Saved!');
                });
@@ -28,8 +30,9 @@ export class LogMiddleware implements NestMiddleware {
                console.log(respuesta);
            }
            if(nivelDeLog=="todo"){
-               var fileWriter= require('fileWriter');
-               fileWriter.writeFileAsync('logs.txt', respuesta, function (err) {
+               var fs = require('fs');
+
+               fs.writeFile('log.txt', JSON.stringify(respuesta ), function (err) {
                    if (err) throw err;
                    console.log('Saved!');
                });

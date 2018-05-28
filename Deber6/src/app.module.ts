@@ -22,7 +22,7 @@ import {MiddlewaresConsumer} from "@nestjs/common/interfaces/middlewares";
     components: [],
 })
 export class AppModule implements NestModule {
-    nivelDeLog = 'archivo';
+    nivelDeLog = 'consola';
 
     configure(consumer:MiddlewaresConsumer)
         : void {
