@@ -8,18 +8,18 @@ export class ProductoController {
   constructor(private _productoService: ProductoService){
   }
 
-  @Get('listarProductos')
+  @Get('')
   listarTodos(@Res() response){
     return response.send(this._productoService.listarProductos());
   }
 
-  @Post('crearProducto')
+  @Post('')
   crearProducto(@Req() request, @Res() response, @Body(new BadRequestPipe(PRODUCTO_SCHEMA)) nuevoProducto){
     const productoCreado = this._productoService.crearProducto(nuevoProducto);
     return nuevoProducto;
   }
 
-  @Get('ObtenerUnProducto/:id')
+  @Get(':id')
   obtenerUnProducto(@Req() request, @Res() response){
     const producto = this._productoService.obtenerUnProducto(request.params.id);
     if (producto == null){
@@ -32,7 +32,7 @@ export class ProductoController {
       return response.send(producto); }
   }
 
-  @Put('editarUnProducto/:id')
+  @Put(':id')
   editarUnProducto(@Req() request, @Body( new BadRequestPipe (PRODUCTO_SCHEMA)) productoModificado){
     const valor = request.params.id;
     this._productoService.editarProducto(valor, productoModificado);

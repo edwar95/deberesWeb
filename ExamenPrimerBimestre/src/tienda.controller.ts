@@ -9,18 +9,18 @@ export class TiendaController {
   constructor(private _tiendaService: TiendaService){
   }
 
-  @Get('listarTiendas')
+  @Get('')
   listarTodos(@Res() response){
     return response.send(this._tiendaService.listarTiendas());
   }
 
-  @Post('crearTienda')
+  @Post('')
   crearTienda(@Req() request, @Res() response, @Body(new BadRequestPipe(TIENDA_SCHEMA)) nuevaTienda ){
     const tiendaCreada = this._tiendaService.crearTienda(nuevaTienda);
     return nuevaTienda;
   }
 
-  @Get('ObtenerUnaTienda/:id')
+  @Get(':id')
   obtenerUnaTienda(@Req() request, @Res() response){
     const tienda = this._tiendaService.obtenerUnaTienda(request.params.id);
     if (tienda == null){
@@ -33,7 +33,7 @@ export class TiendaController {
       return response.send(tienda); }
   }
 
-  @Put('editarUnaTienda/:id')
+  @Put(':id')
   editarUnaTienda(@Req() request, @Body(new BadRequestPipe(TIENDA_SCHEMA)) tiendaModificado){
     const valor = request.params.id;
     this._tiendaService.editarTienda(valor, tiendaModificado);
