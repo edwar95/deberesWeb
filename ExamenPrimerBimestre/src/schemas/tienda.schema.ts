@@ -7,6 +7,6 @@ export const TIENDA_SCHEMA = Joi
     nombre: Joi.string().min(3).max(30).required(),
     direccion: Joi.string().min(10).required(),
     fechaApertura: Joi.date(),
-    RUC: Joi.number().size(11).required(),
-    matriz: Joi.booleanValue(),
+    RUC: Joi.number().required(),
+    matriz: Joi.boolean(),
   });

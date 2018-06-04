@@ -1,4 +1,4 @@
-import { Controller, Get, NotFoundException, Post, Put, Req, Res } from '@nestjs/common';
+import { Controller, Get, NotFoundException, Post, Put, Req, Res, Body} from '@nestjs/common';
 import { TiendaService } from './tienda.service';
 import { BadRequestPipe } from './pipes/bad-request.pipe';
 import { TIENDA_SCHEMA } from './schemas/tienda.schema';
@@ -15,7 +15,7 @@ export class TiendaController {
   }
 
   @Post('crearTienda')
-  crearTienda(@Req() request, @Res() response, @Body(new BadRequestPipe(TIENDA_SCHEMA)) nuevaTienda){
+  crearTienda(@Req() request, @Res() response, @Body(new BadRequestPipe(TIENDA_SCHEMA)) nuevaTienda ){
     const tiendaCreada = this._tiendaService.crearTienda(nuevaTienda);
     return nuevaTienda;
   }
