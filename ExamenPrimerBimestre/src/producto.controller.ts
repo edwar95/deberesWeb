@@ -25,7 +25,7 @@ export class ProductoController {
     if (producto == null){
       throw new NotFoundException(
         {
-          mensaje: 'No se encontro pelicula',
+          mensaje: 'No se encontro producto',
         },
       );
     } else{

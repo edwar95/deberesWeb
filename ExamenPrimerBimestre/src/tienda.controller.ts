@@ -26,7 +26,7 @@ export class TiendaController {
     if (tienda == null){
       throw new NotFoundException(
         {
-          mensaje: 'No se encontro pelicula',
+          mensaje: 'No se encontro tienda',
         },
       );
     } else{
@@ -34,7 +34,7 @@ export class TiendaController {
   }
 
   @Put('editarUnaTienda/:id')
-  editarUnaTienda(@Req() request, @Body(new BadRequestPipe(TIENDA_SCHEMA))tiendaModificado){
+  editarUnaTienda(@Req() request, @Body(new BadRequestPipe(TIENDA_SCHEMA)) tiendaModificado){
     const valor = request.params.id;
     this._tiendaService.editarTienda(valor, tiendaModificado);
   }
