@@ -2,6 +2,7 @@ import { Controller, Get, NotFoundException, Post, Put, Req, Res } from '@nestjs
 import { TiendaService } from './tienda.service';
 import { BadRequestPipe } from './pipes/bad-request.pipe';
 import { TIENDA_SCHEMA } from './schemas/tienda.schema';
+import { TiendaBadRequestPipe } from './pipes/tienda-bad-request.pipe';
 
 @Controller('Tienda')
 export class TiendaController {
