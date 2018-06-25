@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Req, Res } from '@nestjs/common';
+import { Controller, Get, Post, Req, Res, Body } from '@nestjs/common';
 
 @Controller('Autorizacion')
 export class AutorizacionController {
@@ -8,10 +8,10 @@ export class AutorizacionController {
 
     const parametro = {
       nombreCookie: 'token',
-      valorCookie: bodyParams.actor,
+      valorCookie: bodyParams.tienda,
     };
 
-    if ((bodyParams.actor.match('adrianeguez') != null) && (bodyParams.password.match('12345678910') != null)) {
+    if (bodyParams.tienda === 'adrianeguez' && bodyParams.password === '12345678910' ) {
       response.cookie(parametro.nombreCookie, parametro.valorCookie);
       return response.send({ mensaje: 'ok'});
     } else {
@@ -30,7 +30,7 @@ export class AutorizacionController {
       request.cookies[nombreCookie] = response.cookie('token', 'undefined');
       return response.send({mensaje: 'Usted salio del Sistema'});
     } else{
-      return response.send('erros');
+      return response.send('error');
     }
   }
 
