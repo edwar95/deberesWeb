@@ -1,0 +1,32 @@
+<div class="users">
+  <div class="row ">
+    <div class="col-sm-12"><h1 class="title">USUARIOS</h1></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2" *ngFor="let usuario of arregloUsuarios">
+      <app-usuarios [texto]="usuario.texto" [imagen]="usuario.imagen">
+      </app-usuarios>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+      <button class="btn button">Anteriores 4</button>
+    </div>
+    <div class="col-sm-4" align="right">
+      <button class="btn button ">Siguientes 4</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2" *ngFor="let tienda of arregloTiendas">
+      <app-tienda [atribe_1]="" ]="tienda.texto" [atribe_2]="tienda.imagen" [atribe_3]="">
+      </app-tienda>
+    </div>
+  </div>
+
+</div>

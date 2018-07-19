@@ -1,0 +1,18 @@
+.users{
+  background-color: #95A5A6;
+  left: 100px;
+}
+
+.button{
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  background: #A93226;
+  color: #222;
+  font-weight: bold;
+}
+
+
+.title{
+  color: #fcfff6;
+}
