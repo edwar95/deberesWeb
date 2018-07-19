@@ -21,10 +21,14 @@
     </div>
   </div>
 
+  <div class="row ">
+    <div class="col-sm-12"><h1 class="title">MODELOS PAPÁ</h1></div>
+  </div>
+
   <div class="row">
     <div class="col-sm-2"></div>
-    <div class="col-sm-2" *ngFor="let tienda of arregloTiendas">
-      <app-tienda [atribe_1]="" ]="tienda.texto" [atribe_2]="tienda.imagen" [atribe_3]="">
+    <div class="col-sm-5" *ngFor="let tienda of arregloTiendas">
+      <app-tienda [atribe_1]="tienda.id" [atribe_2]="tienda.texto" [atribe_3]="tienda.atribe" ]>
       </app-tienda>
     </div>
   </div>

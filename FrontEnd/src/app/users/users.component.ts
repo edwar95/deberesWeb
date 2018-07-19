@@ -34,12 +34,14 @@ export class UsersComponent implements OnInit {
     {
       id:1,
       imagen:'https://c-sf.smule.com/sf/s66/arr/38/74/93595bce-83a8-4a42-b1cc-6a23e37e3fc6_256.jpg',
-      texto:'GNR'
+      texto:'GNR',
+      atribe:'primero'
     },
     {
       id:2,
       imagen:'https://pbs.twimg.com/profile_images/2978908212/bc17b264fdfeb2776558e90022d76d27.jpeg',
-      texto:'Metallica'
+      texto:'Metallica',
+      atribe:'segundo'
     }
   ];
   constructor() { }
