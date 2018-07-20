@@ -1,7 +1,7 @@
 <app-header></app-header>
 
 <div class="users">
-  <div class="row  " align="center">
+  <div class="row  animaciones" align="center">
     <div class="col-sm-3"></div>
     <div class="col-sm-6 green-borde title ">
       <h1>PETICIÓN DE TRANSFERENCIA</h1>
@@ -9,7 +9,7 @@
 
     <div class="col-sm-3"></div>
   </div>
-  <div class="row ">
+  <div class="row animaciones">
     <div class="col-sm-1"></div>
     <div class="col-sm-5 animated shake"><h1 class="title ">USUARIO</h1></div>
     <div class="col-sm-1"></div>
@@ -17,7 +17,7 @@
     <div class="col-sm-2"></div>
   </div>
 
-  <div class="row">
+  <div class="row animaciones">
     <div class="col-sm-2"></div>
     <div class="col-sm-2">
       <div class="row text" >
@@ -29,12 +29,12 @@
     </div>
   </div>
 
-  <div class="row ">
+  <div class="row animaciones">
     <div class="col-sm-1"></div>
     <div class="col-sm-11"><h1 class="title">MODELOS HIJO</h1></div>
   </div>
 
-  <div class="row">
+  <div class="row animaciones">
     <div class="col-sm-2"></div>
     <div class="col-sm-2" align="center" *ngFor="let producto of arregloProductos">
       <app-producto [imagen]="producto.imagen" [texto]="producto.texto" [id]="producto.id">
@@ -43,7 +43,7 @@
     <div class="col-sm-2"></div>
   </div>
 
-  <div class="row">
+  <div class="row animaciones">
     <div class="col-sm-12" align="center">
       <button class="btn button"> Cargar mas</button>
     </div>
