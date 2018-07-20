@@ -1,0 +1,39 @@
+<app-nav-bar></app-nav-bar>
+<div class="users">
+  <div class="row ">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-11"><h1 class="title">USUARIO</h1></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2">
+      <div class="row text" >
+        <p >{{arregloUsuario[2]}} </p>
+      </div>
+      <div class="row">
+        <img class="img-responsive" [src]="arregloUsuario[1]">
+      </div>
+    </div>
+  </div>
+
+  <div class="row ">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-11"><h1 class="title">MODELOS HIJO</h1></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2" align="center" *ngFor="let producto of arregloProductos">
+      <app-producto [imagen]="producto.imagen" [texto]="producto.texto" [id]="producto.id">
+      </app-producto>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12" align="center">
+      <button class="btn button "> Cargar mas</button>
+    </div>
+  </div>
+
+</div>

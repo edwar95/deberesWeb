@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { TiendaComponent } from './tienda/tienda.component';
+import { ProductoComponent } from './producto/producto.component';
+import { PeticionTranasferenciaComponent } from './peticion-tranasferencia/peticion-tranasferencia.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { TiendaComponent } from './tienda/tienda.component';
     HomeComponent,
     UsersComponent,
     UsuariosComponent,
-    TiendaComponent
+    TiendaComponent,
+    ProductoComponent,
+    PeticionTranasferenciaComponent
   ],
   imports: [
     BrowserModule,

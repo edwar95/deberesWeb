@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="937c6774-b7dc-4be5-9724-b9151a1e4e9f" name="Default" comment="" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <list default="true" id="937c6774-b7dc-4be5-9724-b9151a1e4e9f" name="Default" comment="" />
+=======
+    <list default="true" id="6cdfa34c-8c6d-4b9a-8a3a-4c83270098dd" name="Default" comment="" />
+>>>>>>> 0be40e43dd329a5616b0949b13f8da977c8f683e
+=======
+    <list default="true" id="937c6774-b7dc-4be5-9724-b9151a1e4e9f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/app/tienda/tienda.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/app/tienda/tienda.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/app/tienda/tienda.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/app/tienda/tienda.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/app/users/users.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/app/users/users.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/app/users/users.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/app/users/users.component.ts" afterDir="false" />
+    </list>
+>>>>>>> 59110a48df427cb6dc3f3902ca417a98b52ab17d
+>>>>>>> 79c703ac47318148ed4bb0f6fc7b1b0911ffd29d
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -12,6 +30,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
@@ -143,12 +162,18 @@
       </list>
     </option>
   </component>
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+>>>>>>> 0be40e43dd329a5616b0949b13f8da977c8f683e
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/FrontEnd/node_modules" />
   </component>
@@ -167,6 +192,14 @@
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+=======
+  <component name="ProjectFrameBounds">
+    <option name="x" value="7" />
+    <option name="y" value="23" />
+    <option name="width" value="1184" />
+    <option name="height" value="1336" />
+  </component>
+>>>>>>> 0be40e43dd329a5616b0949b13f8da977c8f683e
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -180,6 +213,16 @@
               <item name="deberesWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="deberesWeb" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="deberesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deberesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="Deber6" type="462c0819:PsiDirectoryNode" />
+            </path>
+>>>>>>> 0be40e43dd329a5616b0949b13f8da977c8f683e
+=======
             <path>
               <item name="deberesWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="deberesWeb" type="462c0819:PsiDirectoryNode" />
@@ -230,6 +273,7 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="usuarios" type="462c0819:PsiDirectoryNode" />
             </path>
+>>>>>>> 59110a48df427cb6dc3f3902ca417a98b52ab17d
           </expand>
           <select />
         </subPane>
@@ -238,12 +282,30 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ExamenPrimerBimestre" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
+>>>>>>> 0be40e43dd329a5616b0949b13f8da977c8f683e
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../POLI_DAVID/ExamenWeb2do-master" />
+>>>>>>> 59110a48df427cb6dc3f3902ca417a98b52ab17d
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.scopes" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/Deber6/node_modules/typescript/lib" />
+=======
+>>>>>>> 0be40e43dd329a5616b0949b13f8da977c8f683e
+=======
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/FrontEnd/node_modules/typescript/lib" />
+>>>>>>> 59110a48df427cb6dc3f3902ca417a98b52ab17d
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -262,6 +324,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="937c6774-b7dc-4be5-9724-b9151a1e4e9f" name="Default" comment="" />
       <created>1526277934339</created>
       <option name="number" value="Default" />
@@ -271,12 +334,36 @@
       <workItem from="1527492768876" duration="7134000" />
       <workItem from="1527652823559" duration="430000" />
       <workItem from="1528083179315" duration="114000" />
+<<<<<<< HEAD
       <workItem from="1532008624853" duration="24750000" />
+=======
+<<<<<<< HEAD
+=======
+      <changelist id="6cdfa34c-8c6d-4b9a-8a3a-4c83270098dd" name="Default" comment="" />
+      <created>1527516017799</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527516017799</updated>
+      <workItem from="1527516019178" duration="29000" />
+>>>>>>> 0be40e43dd329a5616b0949b13f8da977c8f683e
+=======
+      <workItem from="1532008624853" duration="24152000" />
+>>>>>>> 59110a48df427cb6dc3f3902ca417a98b52ab17d
+>>>>>>> 79c703ac47318148ed4bb0f6fc7b1b0911ffd29d
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="35987000" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="11237000" />
+=======
+    <option name="totallyTimeSpent" value="35389000" />
+>>>>>>> 59110a48df427cb6dc3f3902ca417a98b52ab17d
+>>>>>>> 79c703ac47318148ed4bb0f6fc7b1b0911ffd29d
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -321,6 +408,31 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
+=======
+    <option name="totallyTimeSpent" value="29000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="7" y="23" width="1184" height="1336" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+>>>>>>> 0be40e43dd329a5616b0949b13f8da977c8f683e
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -328,6 +440,7 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Deber6/src/usuario.service.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -655,6 +768,8 @@
       </provider>
     </entry>
   </component>
+=======
+>>>>>>> 0be40e43dd329a5616b0949b13f8da977c8f683e
   <component name="masterDetails">
     <states>
       <state key="ScopeChooserConfigurable.UI">
