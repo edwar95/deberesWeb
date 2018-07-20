@@ -1,0 +1,12 @@
+<div class="login-page">
+  <div class="form">
+    <form class="login-form" >
+      <input type="text" name="usuario" placeholder="username@hotmail.com" [(ngModel)]="usuario" required
+              minlength="6" #emailInput="ngModel"/>
+
+      <input type="password" name="contrasena" placeholder="password" [(ngModel)]="contrasena"/>
+      <button class="btn btn-block btn-primary"
+              (click)="usrRoot()" [(ngModel)]="btn"  (valid)="btn=='as'">Login</button>
+    </form>
+  </div>
+</div>

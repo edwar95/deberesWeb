@@ -1,0 +1,14 @@
+.header{
+  /*background-image: url("http://epn.multitrabajos.com/bolsasplus/epn_1684840/images/img_menuUpPoli.jpg");*/
+  background-color: #2C3E50 ;
+}
+
+.bar{
+  background-color: #1ABC9C;
+}
+
+.content {
+  font-size:50px;
+  top:9px;
+  color:#020D0B;
+}
