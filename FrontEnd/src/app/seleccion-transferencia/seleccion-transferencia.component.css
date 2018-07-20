@@ -1,0 +1,19 @@
+.text{
+  text-align: center;
+  color: #f9f9f9;
+  font-weight: bold;
+  font-size: 100%;
+}
+
+.blue-borde{
+  background: #385d9e;
+}
+
+.title{
+  color: #fcfff6;
+}
+.users{
+  background-color: #95A5A6;
+  left: 100px;
+}
+
