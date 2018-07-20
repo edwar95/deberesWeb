@@ -1,6 +1,7 @@
 <div class="users">
   <div class="row ">
-    <div class="col-sm-12"><h1 class="title">USUARIOS</h1></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-11"><h1 class="title">USUARIOS</h1></div>
   </div>
 
   <div class="row">
@@ -22,14 +23,50 @@
   </div>
 
   <div class="row ">
-    <div class="col-sm-12"><h1 class="title">MODELOS PAPÁ</h1></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-11"><h1 class="title">MODELOS PAPÁ</h1></div>
   </div>
 
   <div class="row">
     <div class="col-sm-2"></div>
-    <div class="col-sm-5" *ngFor="let tienda of arregloTiendas">
-      <app-tienda [atribe_1]="tienda.id" [atribe_2]="tienda.texto" [atribe_3]="tienda.atribe" ]>
+    <div class="col-sm-4" align="center" *ngFor="let tienda of arregloTiendas">
+      <app-tienda  [atribe_1]="tienda.id" [atribe_2]="tienda.texto" [atribe_3]="tienda.atribe" [image]="tienda.imagen"   >
       </app-tienda>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+      <button class="btn button">Anteriores 2</button>
+    </div>
+    <div class="col-sm-4" align="right">
+      <button class="btn button ">Siguientes 2</button>
+    </div>
+  </div>
+
+  <div class="row ">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-11"><h1 class="title">MODELOS HIJO</h1></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2" align="center" *ngFor="let producto of arregloProductos">
+      <app-producto [imagen]="producto.imagen" [texto]="producto.texto" [id]="producto.id">
+      </app-producto>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+      <button class="btn button">Anteriores 4</button>
+    </div>
+    <div class="col-sm-4" align="right">
+      <button class="btn button ">Siguientes 4</button>
     </div>
   </div>
 

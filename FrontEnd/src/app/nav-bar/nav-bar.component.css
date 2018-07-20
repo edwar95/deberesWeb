@@ -1,5 +1,5 @@
 .header{
-  /*background-image: url("http://epn.multitrabajos.com/bolsasplus/epn_1684840/images/img_menuUpPoli.jpg");*/
+  background-image: url("https://stmed.net/sites/default/files/metal-wallpapers-25252-7513841.jpg");
   background-color: #2C3E50 ;
 }
 
@@ -7,8 +7,14 @@
   background-color: #1ABC9C;
 }
 
+.text{
+  top: 20px;
+  font-size:150% ;
+  font-weight: bold;
+}
+
 .content {
-  font-size:50px;
+  font-size:40px;
   top:9px;
   color:#020D0B;
 }

@@ -30,6 +30,29 @@ export class UsersComponent implements OnInit {
     }
   ];
 
+  arregloProductos = [
+    {
+      id:1,
+      imagen:'Producto 1, Producto 1, Producto 1s',
+      texto:'GNR'
+    },
+    {
+      id:2,
+      imagen:'producto 2, producto 2, producto 2,',
+      texto:'Metallica'
+    },
+    {
+      id:3,
+      imagen:'producto 3, producto 3, producto 3',
+      texto:'Blink182'
+    },
+    {
+      id:4,
+      imagen:'producto 4, producto 4, producto 4',
+      texto:'LOG'
+    }
+  ];
+
   arregloTiendas = [
     {
       id:1,
