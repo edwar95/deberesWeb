@@ -293,7 +293,7 @@ export class UsersComponent implements OnInit {
 
     if(0<=this.indiceProductos && this.indiceProductos<4){
       for(var i =0; i<4; i++){
-        this.arregloTiendasAux[i]=this.arregloProductos[i];
+        this.arregloProductosAux[i]=this.arregloProductos[i];
       }
       this.indiceProductos=0;
     }else {
@@ -301,7 +301,7 @@ export class UsersComponent implements OnInit {
         if(this.indiceProductos+i<0){
           break;
         }
-        this.arregloTiendasAux[i]=this.arregloProductos[this.indiceProductos-4+i];
+        this.arregloProductosAux[i]=this.arregloProductos[this.indiceProductos-4+i];
       }
       this.indiceProductos=this.indiceProductos-4;
     }
