@@ -6,20 +6,24 @@
 
   <div class="row">
     <div class="col-sm-2"></div>
-    <div class="col-sm-2" *ngFor="let usuario of arregloUsuarios">
-      <app-usuarios [texto]="usuario.texto" [imagen]="usuario.imagen">
-      </app-usuarios>
+    <div class="col-sm-2" *ngFor="let usuario of arregloUsuarios; let indice = index" >
+      <div *ngIf="cargar2()">
+        <app-usuarios [texto]="usuario.texto" [imagen]="usuario.imagen">
+        </app-usuarios>
+      </div>
+
     </div>
   </div>
 
   <div class="row">
     <div class="col-sm-2"></div>
-    <div class="col-sm-4">
-      <button class="btn button">Anteriores 4</button>
+    <div class="col-sm-4" >
+      <button class="btn button " >Anteriores 4</button>
     </div>
     <div class="col-sm-4" align="right">
       <button class="btn button ">Siguientes 4</button>
     </div>
+    <div class="col-sm-2"></div>
   </div>
 
   <div class="row ">

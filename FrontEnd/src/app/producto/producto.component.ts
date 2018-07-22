@@ -11,7 +11,7 @@ export class ProductoComponent implements OnInit {
   @Input() texto: string;
   @Input() id: number;
   @Input() mostrar:boolean;
-  @Input() btnText:boolean;
+  @Input() btnText:string;
   @Output() selecciono: EventEmitter<string>
     = new EventEmitter();
   constructor() { }

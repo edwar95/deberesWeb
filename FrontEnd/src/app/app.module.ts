@@ -14,6 +14,9 @@ import { ProductoComponent } from './producto/producto.component';
 import { PeticionTranasferenciaComponent } from './peticion-tranasferencia/peticion-tranasferencia.component';
 import { HeaderComponent } from './header/header.component';
 import { SeleccionTransferenciaComponent } from './seleccion-transferencia/seleccion-transferencia.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { PeticionesEsperaComponent } from './peticiones-espera/peticiones-espera.component';
+import { PeticionesRecibidasComponent } from './peticiones-recibidas/peticiones-recibidas.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { SeleccionTransferenciaComponent } from './seleccion-transferencia/selec
     ProductoComponent,
     PeticionTranasferenciaComponent,
     HeaderComponent,
-    SeleccionTransferenciaComponent
+    SeleccionTransferenciaComponent,
+    PerfilComponent,
+    PeticionesEsperaComponent,
+    PeticionesRecibidasComponent
   ],
   imports: [
     BrowserModule,

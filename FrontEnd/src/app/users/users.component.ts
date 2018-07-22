@@ -7,6 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
+
+
+
+
+  numero:number;
+  cargar2(){
+    if(Math.floor(this.numero/4)==0){
+      return true;
+    }
+      else {
+      return false;
+    }
+  }
+
+
+
   arregloUsuarios = [
     {
       id:1,
@@ -22,6 +38,21 @@ export class UsersComponent implements OnInit {
       id:3,
       imagen:'https://vignette.wikia.nocookie.net/rockband/images/2/2b/Blink-182.png/revision/latest?cb=20120908001858',
       texto:'Blink182'
+    },
+    {
+      id:4,
+      imagen:'https://pbs.twimg.com/profile_images/378800000346425166/12cf4d774d5acc20a1ddb9824a7a5812.png',
+      texto:'LOG'
+    },
+    {
+      id:4,
+      imagen:'https://pbs.twimg.com/profile_images/378800000346425166/12cf4d774d5acc20a1ddb9824a7a5812.png',
+      texto:'LOG'
+    },
+    {
+      id:4,
+      imagen:'https://pbs.twimg.com/profile_images/378800000346425166/12cf4d774d5acc20a1ddb9824a7a5812.png',
+      texto:'LOG'
     },
     {
       id:4,
@@ -70,6 +101,7 @@ export class UsersComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

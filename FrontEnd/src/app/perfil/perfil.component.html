@@ -1,0 +1,39 @@
+<app-header></app-header>
+
+<div class="users">
+
+  <div class="row  " align="center">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6  title pink-borde">
+      <h1 >PERFIL</h1>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row ">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5"><h3 class="title ">USUARIO</h3></div>
+    <div class="col-sm-1"></div>
+  </div>
+
+  <div class="row ">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2" align="center" *ngFor="let usuario of usuarioSeleccionado">
+      <app-usuarios [texto]="usuario.texto" [imagen]="usuario.imagen" [btnMostrar]="usuario.btnMostrar">
+      </app-usuarios>
+    </div>
+    <div class="col-sm-8"></div>
+  </div>
+
+  <div class="row ">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5"><h1 class="title ">PETICIONES</h1></div>
+    <div class="col-sm-1"></div>
+  </div>
+
+  <app-peticiones-espera></app-peticiones-espera>
+  <app-peticiones-recibidas></app-peticiones-recibidas>
+
+</div>
+
+

@@ -1,0 +1,39 @@
+.yellow-background{
+  background: #cdd90d;
+}
+
+.accept-btn{
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  background: #4abc27;
+  color: #222;
+  font-weight: bold;
+}
+
+.decline-btn{
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  background: #d63729;
+  color: #222;
+  font-weight: bold;
+}
+
+.borde{
+  border: #000000;
+  border-style: solid;
+  border-width: 10%;
+  text-align: center;
+}
+
+
+.orange-text{
+  color: #d95e22;
+  top: 80px;
+}
+
+.spacer {
+  clear: both;
+  visibility: hidden;
+}

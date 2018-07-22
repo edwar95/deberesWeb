@@ -1,0 +1,17 @@
+.yellow-background{
+  background: #cdd90d;
+}
+
+.borde{
+  border: #000000;
+  border-style: solid;
+  border-width: 10%;
+  text-align: center;
+}
+
+.orange-text{
+  color: #d95e22;
+  top: 80px;
+}
+
+

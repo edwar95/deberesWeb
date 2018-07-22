@@ -9,6 +9,7 @@ export class UsuariosComponent implements OnInit {
 
   @Input() imagen: string;
   @Input() texto: string;
+  @Input() btnMostrar: boolean;
   @Output() selecciono: EventEmitter<string>
     = new EventEmitter();
   constructor() { }
