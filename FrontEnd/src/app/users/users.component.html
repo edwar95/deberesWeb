@@ -4,27 +4,38 @@
     <div class="col-sm-11"><h1 class="title">USUARIOS</h1></div>
   </div>
 
-  <div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-2" *ngFor="let usuario of arregloUsuarios; let indice = index" >
-      <div *ngIf="cargar2()">
-        <app-usuarios [texto]="usuario.texto" [imagen]="usuario.imagen">
-        </app-usuarios>
+
+  <div id="carouselExampleControls" class="carousel slide p-3 mb-2  " data-ride="false">
+    <div class="carousel-inner">
+      <div class="row">
+        <div class="carousel-item-active">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-2" *ngFor="let usuario of arregloUsuariosAux; " >
+            <div >
+              <app-usuarios [texto]="usuario.texto" [imagen]="usuario.imagen">
+              </app-usuarios>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
 
+
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4" >
+        <button class="btn button " *ngIf="verificarAntBtn()" (click)="cargarAnterioresUsuarios(); disminuirContadorUsuarios()" >Anteriores 4</button>
+      </div>
+      <div class="col-sm-4" align="right">
+        <button class="btn button "  *ngIf="verificarSigBtn()" (click)="cargarNuevosUsuarios(); aumentarContadorUsuarios() ">Siguientes 4</button>
+      </div>
+      <div class="col-sm-2"></div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-4" >
-      <button class="btn button " >Anteriores 4</button>
-    </div>
-    <div class="col-sm-4" align="right">
-      <button class="btn button ">Siguientes 4</button>
-    </div>
-    <div class="col-sm-2"></div>
-  </div>
+
+
+
 
   <div class="row ">
     <div class="col-sm-1"></div>
@@ -33,7 +44,7 @@
 
   <div class="row">
     <div class="col-sm-2"></div>
-    <div class="col-sm-4" align="center" *ngFor="let tienda of arregloTiendas">
+    <div class="col-sm-4" align="center" *ngFor="let tienda of arregloTiendasAux">
       <app-tienda  [atribe_1]="tienda.id" [atribe_2]="tienda.texto" [atribe_3]="tienda.atribe" [image]="tienda.imagen"   >
       </app-tienda>
     </div>
@@ -43,10 +54,10 @@
   <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-4">
-      <button class="btn button">Anteriores 2</button>
+      <button class="btn button" *ngIf="verificarAntBtnTienda()" (click)="cargarAnterioresTiendas(); disminuirContadorTiendas()">Anteriores 2</button>
     </div>
     <div class="col-sm-4" align="right">
-      <button class="btn button ">Siguientes 2</button>
+      <button class="btn button " *ngIf="verificarSigBtnTienda()" (click)="cargarNuevasTiendas(); aumentarContadorTiendas()">Siguientes 2</button>
     </div>
   </div>
 
@@ -57,7 +68,7 @@
 
   <div class="row">
     <div class="col-sm-2"></div>
-    <div class="col-sm-2" align="center" *ngFor="let producto of arregloProductos">
+    <div class="col-sm-2" align="center" *ngFor="let producto of arregloProductosAux">
       <app-producto [imagen]="producto.imagen" [texto]="producto.texto" [id]="producto.id">
       </app-producto>
     </div>
@@ -67,10 +78,10 @@
   <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-4">
-      <button class="btn button">Anteriores 4</button>
+      <button class="btn button" *ngIf="verificarAntBtnProducto()" (click)="cargarAnterioresProductos(); disminuirContadorProductos()">Anteriores 4</button>
     </div>
     <div class="col-sm-4" align="right">
-      <button class="btn button ">Siguientes 4</button>
+      <button class="btn button " *ngIf="verificarSigBtnProducto()" (click)="cargarNuevosProductos() ; aumentarContadorProductos()">Siguientes 4</button>
     </div>
   </div>
 

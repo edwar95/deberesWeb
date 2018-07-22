@@ -18,6 +18,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { PeticionesEsperaComponent } from './peticiones-espera/peticiones-espera.component';
 import { PeticionesRecibidasComponent } from './peticiones-recibidas/peticiones-recibidas.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { PeticionesRecibidasComponent } from './peticiones-recibidas/peticiones-
     SeleccionTransferenciaComponent,
     PerfilComponent,
     PeticionesEsperaComponent,
-    PeticionesRecibidasComponent
+    PeticionesRecibidasComponent,
+
   ],
   imports: [
     BrowserModule,
