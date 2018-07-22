@@ -23,6 +23,10 @@ export class UsersComponent implements OnInit {
 
   disminuirContadorUsuarios(){
     this.contadorUsuarios--;
+    if(this.contadorUsuarios<0){
+      this.contadorUsuarios=0;
+      this.llenarArregloUsuariosAux()
+    }
   }
 
   verificarAntBtn(){
@@ -35,7 +39,6 @@ export class UsersComponent implements OnInit {
   }
 
   verificarSigBtn(){
-    console.log("contador ant"+this.contadorUsuarios);
     if(this.contadorUsuarios===Math.floor(this.arregloUsuarios.length/4)){
       return false
     }else {
@@ -52,6 +55,7 @@ export class UsersComponent implements OnInit {
   }
 
   cargarNuevosUsuarios(){
+    this.arregloUsuariosAux=[];
     for( var i=0;i<4;i++){
       if(this.arregloUsuarios.length===i+this.indiceUsuarios){
         break;
@@ -64,7 +68,7 @@ export class UsersComponent implements OnInit {
   }
 
   cargarAnterioresUsuarios(){
-
+    this.arregloUsuariosAux=[];
     if(0<=this.indiceUsuarios && this.indiceUsuarios<4){
       for(var i =0; i<4; i++){
         this.arregloUsuariosAux[i]=this.arregloUsuarios[i];
@@ -165,6 +169,7 @@ export class UsersComponent implements OnInit {
       imagen:'producto 4, producto 4, producto 4',
       texto:'LOG'
     },
+
     {
       id:6,
       imagen:'producto 4, producto 4, producto 4',
@@ -214,6 +219,7 @@ export class UsersComponent implements OnInit {
   }
 
   cargarNuevasTiendas(){
+    this.arregloTiendasAux=[];
     for( var i=0;i<2;i++){
       if(this.arregloTiendas.length===i+this.indiceTiendas){
         break;
@@ -226,7 +232,7 @@ export class UsersComponent implements OnInit {
   }
 
   cargarAnterioresTiendas(){
-
+    this.arregloTiendasAux=[];
     if(0<=this.indiceTiendas && this.indiceTiendas<2){
       for(var i =0; i<2; i++){
         this.arregloTiendasAux[i]=this.arregloTiendas[i];
@@ -253,7 +259,6 @@ export class UsersComponent implements OnInit {
   }
 
   verificarSigBtnTienda(){
-    console.log("contador ant"+this.contadorTiendas);
     if(this.contadorTiendas===Math.floor(this.arregloTiendas.length/2)){
       return false
     }else {
@@ -267,6 +272,10 @@ export class UsersComponent implements OnInit {
 
   disminuirContadorProductos(){
     this.contadorProductos--;
+    if(this.contadorProductos<0){
+      this.contadorProductos=0;
+      this.llenarArregloProductosAux()
+    }
   }
 
   llenarArregloProductosAux(){
@@ -278,6 +287,7 @@ export class UsersComponent implements OnInit {
   }
 
   cargarNuevosProductos(){
+    this.arregloProductosAux=[];
     for( var i=0;i<4;i++){
       if(this.arregloProductos.length===i+this.indiceProductos){
         break;
@@ -286,11 +296,10 @@ export class UsersComponent implements OnInit {
 
     }
     this.indiceProductos=i+this.indiceProductos;
-    console.log(this.arregloProductos)
   }
 
   cargarAnterioresProductos(){
-
+    this.arregloProductosAux=[];
     if(0<=this.indiceProductos && this.indiceProductos<4){
       for(var i =0; i<4; i++){
         this.arregloProductosAux[i]=this.arregloProductos[i];
@@ -317,8 +326,7 @@ export class UsersComponent implements OnInit {
   }
 
   verificarSigBtnProducto(){
-    console.log("contador ant"+this.contadorProductos);
-    if(this.contadorProductos===Math.floor(this.arregloProductos.length/4)){
+    if(this.arregloProductos[this.arregloProductos.length-1]===this.arregloProductosAux[this.arregloProductosAux.length-1]){
       return false
     }else {
       return true;
@@ -331,6 +339,10 @@ export class UsersComponent implements OnInit {
 
   disminuirContadorTiendas(){
     this.contadorTiendas--;
+    if(this.contadorTiendas<0){
+      this.contadorTiendas=0;
+      this.llenarArregloTiendasAux()
+    }
   }
   constructor() { }
 
