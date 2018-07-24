@@ -9,6 +9,8 @@ export class PeticionTranasferenciaComponent implements OnInit {
 
   constructor() { }
 
+
+  arregloProductosAux=[]
   productoSeleccionado=[
     {
       id:1,
@@ -39,14 +41,37 @@ export class PeticionTranasferenciaComponent implements OnInit {
       id:4,
       imagen:'producto 4, producto 4, producto 4',
       texto:'LOG',
-    }
+    },
+    {
+      id:5,
+      imagen:'producto 4, producto 4, producto 4',
+      texto:'LOG',
+    },
+    {
+      id:7,
+      imagen:'producto 4, producto 4, producto 4',
+      texto:'LOG',
+    },
+    {
+      id:8,
+      imagen:'producto 4, producto 4, producto 4',
+      texto:'LOG',
+    },
+    {
+      id:9,
+      imagen:'producto 4, producto 4, producto 4',
+      texto:'LOG',
+    },
   ];
 
-arregloUsuario = [
-      1,
-      'https://pbs.twimg.com/media/C7IqZcdVsAAkkYS.jpg',
-      'GNR'
+  arregloUsuario = [
+    1,
+    'https://pbs.twimg.com/media/C7IqZcdVsAAkkYS.jpg',
+    'GNR'
   ]
+
+
+
   ngOnInit() {
   }
 

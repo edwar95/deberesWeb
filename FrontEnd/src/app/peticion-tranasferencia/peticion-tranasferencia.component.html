@@ -36,7 +36,7 @@
 
   <div class="row animaciones">
     <div class="col-sm-2"></div>
-    <div class="col-sm-2" align="center" *ngFor="let producto of arregloProductos">
+    <div class="col-sm-2" align="center" *ngFor="let producto of arregloProductos let i=index">
       <app-producto [imagen]="producto.imagen" [texto]="producto.texto" [id]="producto.id">
       </app-producto>
     </div>
